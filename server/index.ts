@@ -7,9 +7,9 @@ function injectEnv() {
   let envPath;
 
   if (process.env.NODE_ENV === "production") {
-    envPath = path.join(process.cwd(), "server", ".env");
+    envPath = path.join(process.cwd(), ".env");
   } else {
-    envPath = path.join(process.cwd(), "server", ".env.local");
+    envPath = path.join(process.cwd(), ".env.local");
   }
 
   dotenv.config({ path: envPath });
