@@ -1,3 +1,9 @@
+### To run via docker-compose
+
+```sh
+docker compose up
+```
+
 ### To run via docker
 
 ```sh

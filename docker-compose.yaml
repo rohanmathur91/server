@@ -1,0 +1,10 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    pull_policy: build # Always build the image before up
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080

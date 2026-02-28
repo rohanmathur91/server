@@ -31,6 +31,15 @@ function main() {
     });
   });
 
+  app.get("/feed", (req, res) => {
+    res.status(200).json({
+      success: true,
+      data: {
+        message: "Hello from feed!",
+      },
+    });
+  });
+
   app.listen(config.PORT, () => {
     console.log(`Server running on port: ${config.PORT}`);
   });
