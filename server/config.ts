@@ -5,6 +5,9 @@ const configSchema = z.object({
     (val) => (typeof val === "string" ? val.trim() : val),
     z.coerce.number(),
   ),
+  NODE_ENV: z
+    .enum(["development", "production", "test"])
+    .default("development"),
 });
 
 export function parseConfig(env: unknown) {
