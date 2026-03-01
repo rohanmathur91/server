@@ -46,3 +46,11 @@ function main() {
 }
 
 main();
+
+/**
+ * Next steps:
+ * - volumes
+ * - postgres service
+ * - connect postgres with server
+ * - how all the above services will talk with each other on internet?
+ */
